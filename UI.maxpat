@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 242.0, 150.0, 778.0, 734.0 ],
+		"rect" : [ 523.0, 246.0, 601.0, 411.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -39,12 +39,51 @@
 		"showontab" : 0,
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-1",
+					"maxclass" : "kslider",
+					"numinlets" : 2,
+					"numoutlets" : 2,
+					"outlettype" : [ "int", "int" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 271.0, 528.0, 468.0, 53.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 7.5, 344.0, 585.0, 64.0 ],
+					"range" : 66,
+					"style" : "",
+					"whitekeycolor" : [ 0.862745, 0.870588, 0.878431, 1.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"bgmode" : 0,
+					"border" : 0,
+					"clickthrough" : 0,
+					"enablehscroll" : 0,
+					"enablevscroll" : 0,
+					"id" : "obj-2",
+					"lockeddragscroll" : 0,
+					"maxclass" : "bpatcher",
+					"name" : "Wavetable Editor.maxpat",
+					"numinlets" : 0,
+					"numoutlets" : 0,
+					"offset" : [ 0.0, 0.0 ],
+					"patching_rect" : [ 0.0, 0.0, 597.0, 258.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 0.0, 0.0, 600.0, 169.0 ],
+					"varname" : "Wavetable Editor",
+					"viewvisibility" : 1
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-14",
 					"maxclass" : "newobj",
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 0.0, 136.0, 102.0, 22.0 ],
+					"patching_rect" : [ 0.0, 263.0, 102.0, 22.0 ],
 					"style" : "",
 					"text" : "receive offsetEnv"
 				}
@@ -137,9 +176,9 @@
 					"numoutlets" : 3,
 					"outlettype" : [ "", "", "float" ],
 					"parameter_enable" : 1,
-					"patching_rect" : [ 502.0, 170.0, 95.0, 169.0 ],
+					"patching_rect" : [ 502.0, 297.0, 95.0, 169.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 502.0, 170.0, 95.0, 169.0 ],
+					"presentation_rect" : [ 0.0, 170.0, 98.0, 169.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
 							"parameter_longname" : "live.tab[1]",
@@ -152,6 +191,8 @@
 
 					}
 ,
+					"spacing_x" : 3.0,
+					"spacing_y" : 3.0,
 					"varname" : "live.tab"
 				}
 
@@ -170,45 +211,12 @@
 					"name" : "Env.maxpat",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"offset" : [ 0.0, -510.0 ],
-					"patching_rect" : [ 0.0, 170.0, 500.0, 169.0 ],
+					"offset" : [ 0.0, 0.0 ],
+					"patching_rect" : [ 0.0, 297.0, 500.0, 169.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 0.0, 170.0, 500.0, 169.0 ],
+					"presentation_rect" : [ 100.0, 170.0, 500.0, 169.0 ],
 					"varname" : "Env",
 					"viewvisibility" : 1
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-41",
-					"maxclass" : "live.dial",
-					"numinlets" : 1,
-					"numoutlets" : 2,
-					"outlettype" : [ "", "float" ],
-					"parameter_enable" : 1,
-					"patching_rect" : [ 0.0, 53.0, 44.0, 53.0 ],
-					"presentation" : 1,
-					"presentation_rect" : [ 0.0, 53.0, 44.0, 53.0 ],
-					"saved_attribute_attributes" : 					{
-						"valueof" : 						{
-							"parameter_linknames" : 1,
-							"parameter_longname" : "UI Attack[2]",
-							"parameter_shortname" : "Attack",
-							"parameter_type" : 0,
-							"parameter_mmax" : 10000.0,
-							"parameter_modmode" : 4,
-							"parameter_modmax" : 10000.0,
-							"parameter_unitstyle" : 2,
-							"parameter_steps" : 10000,
-							"parameter_defer" : 1,
-							"parameter_invisible" : 2
-						}
-
-					}
-,
-					"triangle" : 1,
-					"varname" : "UI Attack[2]"
 				}
 
 			}
@@ -242,27 +250,21 @@
 			}
 , 			{
 				"box" : 				{
-					"id" : "obj-1",
-					"maxclass" : "live.text",
+					"angle" : 270.0,
+					"bgcolor" : [ 0.0, 0.0, 0.0, 0.23 ],
+					"border" : 1,
+					"bordercolor" : [ 1.0, 1.0, 1.0, 1.0 ],
+					"id" : "obj-7",
+					"maxclass" : "panel",
+					"mode" : 0,
 					"numinlets" : 1,
-					"numoutlets" : 2,
-					"outlettype" : [ "", "" ],
-					"parameter_enable" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 417.0, 540.0, 128.0, 128.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 0.0, 0.0, 40.0, 20.0 ],
-					"saved_attribute_attributes" : 					{
-						"valueof" : 						{
-							"parameter_longname" : "live.text",
-							"parameter_shortname" : "live.text",
-							"parameter_type" : 2,
-							"parameter_mmax" : 1.0,
-							"parameter_enum" : [ "val1", "val2" ],
-							"parameter_invisible" : 2
-						}
-
-					}
-,
-					"varname" : "live.text"
+					"presentation_rect" : [ 0.0, 341.0, 600.0, 70.0 ],
+					"proportion" : 0.39,
+					"rounded" : 0,
+					"style" : ""
 				}
 
 			}
