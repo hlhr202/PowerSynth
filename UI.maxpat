@@ -9,7 +9,8 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 523.0, 246.0, 601.0, 411.0 ],
+		"rect" : [ 223.0, 318.0, 868.0, 639.0 ],
+		"openrect" : [ 0.0, 0.0, 600.0, 413.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -170,8 +171,8 @@
 				"box" : 				{
 					"id" : "obj-6",
 					"maxclass" : "live.tab",
-					"num_lines_patching" : 4,
-					"num_lines_presentation" : 4,
+					"num_lines_patching" : 8,
+					"num_lines_presentation" : 8,
 					"numinlets" : 1,
 					"numoutlets" : 3,
 					"outlettype" : [ "", "", "float" ],
@@ -184,7 +185,7 @@
 							"parameter_longname" : "live.tab[1]",
 							"parameter_shortname" : "live.tab[1]",
 							"parameter_type" : 2,
-							"parameter_enum" : [ "Env1", "Env2", "Env3", "Env4" ],
+							"parameter_enum" : [ "Env1", "Env2", "Env3", "Env4", "LFO1", "LFO2", "LFO3", "LFO4" ],
 							"parameter_unitstyle" : 0,
 							"parameter_invisible" : 2
 						}
@@ -259,7 +260,7 @@
 					"mode" : 0,
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 417.0, 540.0, 128.0, 128.0 ],
+					"patching_rect" : [ 937.0, 338.0, 128.0, 128.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 0.0, 341.0, 600.0, 70.0 ],
 					"proportion" : 0.39,
